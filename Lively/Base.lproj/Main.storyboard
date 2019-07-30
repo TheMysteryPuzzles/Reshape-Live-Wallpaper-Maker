@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Asset Selection View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AssetSelectionViewController" customModule="Lively" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="66"/>
+        </scene>
+        <!--Asset Editor View Controller-->
+        <scene sceneID="VzM-g0-QSg">
+            <objects>
+                <viewController storyboardIdentifier="AssetEditorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="toO-3a-Z0V" customClass="AssetEditorViewController" customModule="Lively" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LBb-vF-d4h"/>
+                        <viewControllerLayoutGuide type="bottom" id="MMY-5X-WTa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="52V-ll-WF0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC7-Qr-8Ro" userLabel="Player View">
+                                <rect key="frame" x="0.0" y="49" width="414" height="562"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6F-AN-1RB" customClass="TrimmerView" customModule="PryntTrimmerView">
+                                <rect key="frame" x="10" y="671" width="394" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="H6F-AN-1RB" secondAttribute="height" multiplier="187:28" id="jvO-37-blt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="handleColor">
+                                        <color key="value" red="0.66978114840000003" green="0.1521329582" blue="0.44079029559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zx-jJ-AEa">
+                                <rect key="frame" x="369" y="633" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="bVo-hk-LkX"/>
+                                    <constraint firstAttribute="height" constant="25" id="tJF-Fc-1Fg"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ic_Play"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBh-Y5-bfX">
+                                <rect key="frame" x="37" y="767" width="340" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="30"/>
+                                <state key="normal" title="Download">
+                                    <color key="titleColor" red="0.66978114840000003" green="0.1521329582" blue="0.44079029559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H6F-AN-1RB" firstAttribute="top" secondItem="EC7-Qr-8Ro" secondAttribute="bottom" constant="60" id="BLJ-2j-BhA"/>
+                            <constraint firstItem="eOD-6a-RO7" firstAttribute="bottom" secondItem="MBh-Y5-bfX" secondAttribute="bottom" constant="55" id="F5a-uI-aQy"/>
+                            <constraint firstItem="eOD-6a-RO7" firstAttribute="trailing" secondItem="6zx-jJ-AEa" secondAttribute="trailing" constant="20" id="FYq-Zt-NEU"/>
+                            <constraint firstItem="MBh-Y5-bfX" firstAttribute="leading" secondItem="eOD-6a-RO7" secondAttribute="leading" constant="37" id="Jtt-d8-6MX"/>
+                            <constraint firstItem="EC7-Qr-8Ro" firstAttribute="leading" secondItem="52V-ll-WF0" secondAttribute="leadingMargin" constant="-20" id="Okm-lG-TZ2"/>
+                            <constraint firstItem="MBh-Y5-bfX" firstAttribute="top" secondItem="H6F-AN-1RB" secondAttribute="bottom" constant="37" id="Pr5-5s-L7O"/>
+                            <constraint firstItem="MMY-5X-WTa" firstAttribute="top" secondItem="H6F-AN-1RB" secondAttribute="bottom" constant="132" id="V6g-xY-zNa"/>
+                            <constraint firstItem="eOD-6a-RO7" firstAttribute="trailing" secondItem="H6F-AN-1RB" secondAttribute="trailing" constant="10" id="ZOT-7g-t7q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EC7-Qr-8Ro" secondAttribute="trailing" constant="-20" id="aM7-OC-5hd"/>
+                            <constraint firstItem="EC7-Qr-8Ro" firstAttribute="top" secondItem="LBb-vF-d4h" secondAttribute="bottom" constant="5" id="aWl-2f-fwb"/>
+                            <constraint firstItem="eOD-6a-RO7" firstAttribute="trailing" secondItem="MBh-Y5-bfX" secondAttribute="trailing" constant="37" id="i2G-NR-C9n"/>
+                            <constraint firstItem="H6F-AN-1RB" firstAttribute="leading" secondItem="eOD-6a-RO7" secondAttribute="leading" constant="10" id="k0s-e9-ftQ"/>
+                            <constraint firstItem="6zx-jJ-AEa" firstAttribute="top" secondItem="EC7-Qr-8Ro" secondAttribute="bottom" constant="22" id="zWd-sd-vs3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eOD-6a-RO7"/>
+                    </view>
+                    <connections>
+                        <outlet property="makeButton" destination="MBh-Y5-bfX" id="fhz-6y-Hk4"/>
+                        <outlet property="playButton" destination="6zx-jJ-AEa" id="NPk-yf-prs"/>
+                        <outlet property="playerView" destination="EC7-Qr-8Ro" id="GGR-bd-gDl"/>
+                        <outlet property="trimmerView" destination="H6F-AN-1RB" id="KZj-El-3cx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4d-Ez-1ki" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.753623188406" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_Play" width="155" height="155"/>
+    </resources>
+</document>

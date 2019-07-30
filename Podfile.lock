@@ -1,0 +1,28 @@
+PODS:
+  - GIFGenerator (0.3.0)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - PryntTrimmerView (4.0.0)
+  - SwiftMessages (6.0.2):
+    - SwiftMessages/App (= 6.0.2)
+  - SwiftMessages/App (6.0.2)
+  - TLPhotoPicker (1.8.8)
+
+DEPENDENCIES:
+  - GIFGenerator
+  - NVActivityIndicatorView
+  - PryntTrimmerView
+  - SwiftMessages
+  - TLPhotoPicker
+
+SPEC CHECKSUMS:
+  GIFGenerator: abd0770077d06db09cff015c7cf696fd36d5ad74
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  PryntTrimmerView: 67e67573ffd4c073f1308effa66aefd0cfa667a0
+  SwiftMessages: 8b3cc68dba2f1c91aac1a74c90b10287aac35371
+  TLPhotoPicker: f90e8567aa33fff6b1b9cad4adbd57090b200acc
+
+PODFILE CHECKSUM: e4e2855cf1c61676ab28675d53599913deeb2bb8
+
+COCOAPODS: 1.4.0
