@@ -12,4 +12,4 @@ Features
 * Only devices newer than the 6S support the Live wallpaper feature.
 * You can set the Live wallpaper through "Settings > Live Wallpaper”.
 
-[](screenshot.png)
+![](screenshot.png)
