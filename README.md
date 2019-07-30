@@ -13,3 +13,5 @@ Features
 * You can set the Live wallpaper through "Settings > Live Wallpaper”.
 
 ![](screenshot.png)
+
+Available on Apps Store: https://apps.apple.com/us/app/reshape-live-wallpapers/id1471556039
